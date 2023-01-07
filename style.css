@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+    background-color: rgba(0, 0, 0);
+}
+
+#form h3 {
+    color: white;
+    font-family: serif;
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 3rem;
+    color: rgb(0, 255, 229);
+}
+
+#form {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input {
+    border: 1px solid white;
+    color: white;
+    padding: 4px;
+    width: 70%;
+}
+
+::placeholder {
+    color: white;
+}
+
+#button {
+    padding: 3px 8px 4px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 32px;
+}
+
+.box {
+    padding-top: 20px;
+}
+
+.group {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px;
+    border: 1px solid white;
+    min-height: 120px;
+    max-height: calc(100vh - 220px);
+    overflow-y: scroll;
+}
+
+.add-item {
+    background-color: white;
+    color: black;
+    padding: 4px;
+    margin: 12px 0;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px 24px;
+    margin-right: 40px;
+    line-height: 1em;
+}
+
+.delete-btn span {
+    display: inline-block;
+    transform: rotate(45deg) translate(50%,-40%);
+    color: rgb(255, 115, 115);
+    line-height: 1em;
+}
+
+.check {
+    margin-right: 16px;
+    margin-left: 12px;
+}
+
+label {
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width : 600px) {
+    .flex {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    #form h3 {
+        display: none;
+    }
+
+    .delete-btn {
+        margin-right: 0;
+    }
+}
